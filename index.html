@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183d32">
+  <meta name="description" content="千葉県市川市大町へ。市川市動植物園の動物たち、大慶園の遊び、梨畑と森。大町の見どころを紹介します。">
+  <title>大町 | 千葉県市川市</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Serif+JP:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --forest: #183d32;
+      --forest-deep: #102b24;
+      --leaf: #d3ef70;
+      --coral: #e66c4e;
+      --paper: #f7f8f2;
+      --ink: #1b2823;
+      --muted: #64716b;
+      --serif: "Noto Serif JP", "Yu Mincho", serif;
+      --sans: "Zen Kaku Gothic New", "Yu Gothic", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
+    .site-header { position: absolute; z-index: 2; top: 0; left: 0; width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 22px 6.2%; color: white; }
+    .brand { display: inline-flex; gap: 12px; align-items: center; color: inherit; text-decoration: none; }
+    .brand-mark { display: grid; width: 38px; aspect-ratio: 1; place-items: center; border: 1px solid currentColor; border-radius: 50%; font: 20px var(--serif); }
+    .brand-name { font: 600 13px var(--serif); letter-spacing: 0; }
+    .brand-name small { display: block; margin-top: 3px; font: 10px var(--sans); letter-spacing: .08em; opacity: .8; }
+    .site-nav { display: flex; gap: clamp(18px, 3vw, 42px); align-items: center; }
+    .site-nav a { font-size: 12px; text-decoration: none; }
+    .site-nav a:hover { color: var(--leaf); }
+    .hero { position: relative; display: flex; min-height: min(780px, 100svh); align-items: center; overflow: hidden; color: white; background: var(--forest-deep); }
+    .hero::before { position: absolute; inset: 0 0 0 34%; content: ""; background: repeating-linear-gradient(118deg, transparent 0 38px, rgb(211 239 112 / 10%) 39px 40px, transparent 41px 78px), radial-gradient(ellipse at 76% 74%, #315c45 0 17%, transparent 17.2%), radial-gradient(ellipse at 62% 83%, #244a39 0 25%, transparent 25.2%), linear-gradient(145deg, #193c30, #102b24 68%); clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%); }
+    .hero::after { position: absolute; inset: 0; content: ""; background: linear-gradient(90deg, var(--forest-deep) 0%, rgb(16 43 36 / 92%) 34%, rgb(16 43 36 / 20%) 100%); }
+    .hero-content { position: relative; z-index: 1; width: min(1100px, 100%); margin: 70px auto 0; padding: 40px 8%; animation: arrive .8s both; }
+    .eyebrow { display: flex; gap: 12px; align-items: center; margin: 0 0 24px; color: var(--leaf); font-size: 11px; font-weight: 700; letter-spacing: .13em; }
+    .eyebrow::before { width: 30px; height: 1px; content: ""; background: currentColor; }
+    h1 { margin: 0; font: 500 clamp(54px, 9vw, 112px)/1.2 var(--serif); letter-spacing: 0; }
+    .hero-subtitle { margin: 20px 0 0; font: 500 clamp(17px, 2.2vw, 23px)/1.8 var(--serif); }
+    .hero-description { max-width: 430px; margin: 15px 0 0; color: rgb(255 255 255 / 84%); font-size: 13px; line-height: 2; }
+    .hero-link { display: inline-flex; gap: 24px; align-items: center; margin-top: 32px; padding: 14px 18px; color: var(--forest-deep); background: var(--leaf); font-size: 12px; font-weight: 700; text-decoration: none; transition: background .2s, transform .2s; }
+    .hero-link:hover { transform: translateY(-2px); background: white; }
+    .hero-link span { font-size: 18px; line-height: 1; }
+    .hero-note { position: absolute; z-index: 1; right: 6%; bottom: 25px; color: rgb(255 255 255 / 72%); font-size: 10px; }
+    .intro { display: grid; grid-template-columns: minmax(140px, .7fr) 2fr; gap: 9%; align-items: start; padding: 105px 10%; background: var(--forest); color: white; }
+    .section-index { margin: 8px 0 0; color: var(--leaf); font: 16px "DM Serif Display", serif; }
+    .section-index span { display: block; width: 36px; height: 1px; margin-top: 13px; background: currentColor; }
+    .intro h2 { max-width: 720px; margin: 0; font: 500 clamp(25px, 4vw, 43px)/1.8 var(--serif); }
+    .intro p { max-width: 680px; margin: 20px 0 0; color: rgb(255 255 255 / 78%); font-size: 14px; line-height: 2.2; }
+    .places { padding: 100px 8% 115px; }
+    .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin: 0 auto 55px; max-width: 1080px; }
+    .section-heading h2 { margin: 8px 0 0; font: 500 clamp(33px, 5vw, 54px)/1.35 var(--serif); }
+    .section-heading p { max-width: 300px; margin: 0 0 5px; color: var(--muted); font-size: 12px; line-height: 1.9; }
+    .section-kicker { color: var(--coral); font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+    .place-list { max-width: 1080px; margin: auto; }
+    .place { display: grid; grid-template-columns: 1.05fr .95fr; min-height: 390px; margin-bottom: 36px; background: white; }
+    .place:nth-child(even) .place-image { order: 2; }
+    .place-image { position: relative; display: grid; min-height: 320px; overflow: hidden; place-items: center; }
+    .place-visual { isolation: isolate; }
+    .place-visual::before, .place-visual::after { position: absolute; z-index: -1; content: ""; }
+    .place-visual-zoo { color: #eff5dd; background: repeating-linear-gradient(0deg, transparent 0 31px, rgb(239 245 221 / 9%) 32px 33px), linear-gradient(135deg, #44745a, #1d4435 72%); }
+    .place-visual-zoo::before { top: -34%; right: 8%; width: min(30vw, 270px); aspect-ratio: 1; border: 1px solid rgb(211 239 112 / 50%); border-radius: 50%; box-shadow: 0 0 0 28px rgb(211 239 112 / 8%), 0 0 0 58px rgb(211 239 112 / 6%); }
+    .place-visual-zoo::after { right: 15%; bottom: -34%; width: 43%; height: 85%; border: 1px solid rgb(239 245 221 / 35%); border-radius: 50% 50% 0 0; background: rgb(16 43 36 / 20%); }
+    .place-visual-play { color: #fff3dc; background: repeating-linear-gradient(90deg, transparent 0 47px, rgb(255 243 220 / 10%) 48px 49px), linear-gradient(135deg, #d96448, #8e3d3d 70%); }
+    .place-visual-play::before { top: 13%; left: 15%; width: 70%; height: 70%; border: 1px solid rgb(255 243 220 / 42%); transform: rotate(12deg); }
+    .place-visual-play::after { right: 17%; bottom: 16%; width: 30%; aspect-ratio: 1; border: 1px solid rgb(255 243 220 / 52%); border-radius: 50%; box-shadow: 0 0 0 18px rgb(255 243 220 / 9%), 0 0 0 37px rgb(255 243 220 / 7%); }
+    .visual-word { font: 400 clamp(36px, 6vw, 68px)/1 "DM Serif Display", var(--serif); letter-spacing: .04em; }
+    .visual-caption { position: absolute; bottom: 24px; left: 26px; font-size: 10px; font-weight: 700; letter-spacing: .16em; }
+    .place-copy { align-self: center; padding: clamp(28px, 5vw, 64px); }
+    .place-number { color: var(--coral); font: 16px "DM Serif Display", serif; }
+    .place-copy h3 { margin: 13px 0 14px; font: 600 clamp(23px, 3vw, 32px)/1.5 var(--serif); }
+    .place-copy p { margin: 0; color: #53615a; font-size: 13px; line-height: 2.1; }
+    .place-meta { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 22px; color: var(--forest); font-size: 11px; font-weight: 700; }
+    .place-meta span::before { content: "・"; color: var(--coral); }
+    .inline-link { display: inline-flex; gap: 14px; align-items: center; margin-top: 23px; padding-bottom: 6px; border-bottom: 1px solid var(--forest); color: var(--forest); font-size: 12px; font-weight: 700; text-decoration: none; }
+    .inline-link:hover { color: var(--coral); border-color: var(--coral); }
+    .nearby { display: grid; grid-template-columns: .8fr 1.2fr; gap: 8%; align-items: start; padding: 90px 10%; color: white; background: var(--forest-deep); }
+    .nearby h2 { margin: 9px 0; font: 500 clamp(28px, 4vw, 42px)/1.6 var(--serif); }
+    .nearby-lead { color: rgb(255 255 255 / 72%); font-size: 13px; line-height: 2; }
+    .nearby-list { margin: 0; padding: 0; list-style: none; }
+    .nearby-list li { display: grid; grid-template-columns: 1fr auto; gap: 15px; padding: 20px 0; border-top: 1px solid rgb(255 255 255 / 25%); }
+    .nearby-list li:last-child { border-bottom: 1px solid rgb(255 255 255 / 25%); }
+    .nearby-list strong { font: 500 17px var(--serif); }
+    .nearby-list p { margin: 6px 0 0; color: rgb(255 255 255 / 70%); font-size: 11px; line-height: 1.8; }
+    .nearby-list a { align-self: center; color: var(--leaf); font-size: 11px; text-decoration: none; white-space: nowrap; }
+    .visit { padding: 100px 8%; background: var(--leaf); }
+    .visit-inner { display: grid; grid-template-columns: .8fr 1.2fr; gap: 8%; max-width: 1080px; margin: auto; }
+    .visit h2 { margin: 10px 0; color: var(--forest-deep); font: 500 clamp(30px, 4vw, 46px)/1.5 var(--serif); }
+    .visit-lead { color: #3b5547; font-size: 13px; line-height: 2; }
+    .visit-details { margin: 0; }
+    .visit-details div { display: grid; grid-template-columns: 115px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgb(24 61 50 / 25%); }
+    .visit-details div:last-child { border-bottom: 1px solid rgb(24 61 50 / 25%); }
+    .visit-details dt { color: var(--forest); font-size: 12px; font-weight: 700; }
+    .visit-details dd { margin: 0; color: #304a3d; font-size: 12px; line-height: 1.9; }
+    .map-link { display: inline-flex; gap: 12px; align-items: center; margin-top: 24px; padding: 13px 17px; color: white; background: var(--forest); font-size: 12px; font-weight: 700; text-decoration: none; }
+    .map-link:hover { background: var(--coral); }
+    .site-footer { display: flex; justify-content: space-between; gap: 20px; align-items: center; padding: 28px 8%; color: rgb(255 255 255 / 72%); background: var(--forest-deep); font-size: 10px; }
+    .site-footer a { color: white; text-decoration: none; }
+    @keyframes arrive { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 700px) {
+      .site-header { padding: 16px 6%; }
+      .site-nav { gap: 14px; }
+      .site-nav a { font-size: 10px; }
+      .site-nav a:first-child { display: none; }
+      .hero { min-height: 740px; min-height: 92svh; }
+      .hero::before { left: 8%; }
+      .hero::after { background: linear-gradient(90deg, rgb(16 43 36 / 94%), rgb(16 43 36 / 42%)); }
+      .hero-content { margin-top: 30px; padding: 28px 7%; }
+      .hero-description { max-width: 340px; }
+      .hero-note { right: 5%; font-size: 9px; }
+      .intro { grid-template-columns: 1fr; gap: 30px; padding: 70px 8%; }
+      .section-heading { align-items: start; flex-direction: column; margin-bottom: 35px; }
+      .section-heading p { max-width: 400px; }
+      .places { padding: 72px 6%; }
+      .place { grid-template-columns: 1fr; margin-bottom: 24px; }
+      .place:nth-child(even) .place-image { order: 0; }
+      .place-image { min-height: 250px; height: 250px; }
+      .place-copy { padding: 27px 25px 32px; }
+      .nearby { grid-template-columns: 1fr; gap: 26px; padding: 70px 8%; }
+      .visit { padding: 72px 7%; }
+      .visit-inner { grid-template-columns: 1fr; gap: 24px; }
+      .visit-details div { grid-template-columns: 90px 1fr; gap: 12px; }
+      .site-footer { align-items: flex-start; flex-direction: column; padding: 25px 7%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="大町 トップ">
+      <span class="brand-mark" aria-hidden="true">大</span>
+      <span class="brand-name">大町<small>ICHIKAWA, CHIBA</small></span>
+    </a>
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a href="#about">大町について</a>
+      <a href="#places">見どころ</a>
+      <a href="#visit">アクセス</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">CHIBA · ICHIKAWA</p>
+        <h1 id="hero-title">市川市<br>大町</h1>
+        <p class="hero-subtitle">自然と、遊びの、いいところ。</p>
+        <p class="hero-description">動物たちに会いに行ったり、思いきり遊んだり。<br>緑豊かな市川市大町で、今日はどんな一日にしよう。</p>
+        <a class="hero-link" href="#places">大町の見どころ <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="intro" id="about">
+      <p class="section-index">01 <span></span></p>
+      <div>
+        <h2>森のそばに、<br>わくわくが待っている。</h2>
+        <p>千葉県市川市の北東部にある大町。動物たちと出会える市川市動植物園や、遊びが詰まった大慶園、季節の梨畑。街のすぐそばで、自然と遊びを一緒に楽しめるエリアです。</p>
+      </div>
+    </section>
+
+    <section class="places" id="places" aria-labelledby="places-title">
+      <div class="section-heading">
+        <div><span class="section-kicker">FIND YOUR OMACHI</span><h2 id="places-title">大町の見どころ</h2></div>
+        <p>動物園からアミューズメントまで。<br>気になる場所から、大町を楽しもう。</p>
+      </div>
+      <div class="place-list">
+        <article class="place">
+          <div class="place-image place-visual place-visual-zoo" aria-hidden="true">
+            <span class="visual-word">NATURE</span><span class="visual-caption">MEET THE ANIMALS</span>
+          </div>
+          <div class="place-copy">
+            <span class="place-number">01 / ANIMALS</span>
+            <h3>市川市動植物園</h3>
+            <p>レッサーパンダや小さな動物たちに会える、緑に囲まれた動植物園。動物との距離が近く、家族でのお出かけにもぴったりです。隣接する自然観察園では、季節ごとの草花や生きものにも出会えます。</p>
+            <div class="place-meta"><span>動物たちに会う</span><span>自然観察園</span><span>家族でおでかけ</span></div>
+            <a class="inline-link" href="https://www.city.ichikawa.lg.jp/zoo/" target="_blank" rel="noreferrer">市川市の公式案内 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="place">
+          <div class="place-image place-visual place-visual-play" aria-hidden="true">
+            <span class="visual-word">PLAY</span><span class="visual-caption">MAKE A DAY OF IT</span>
+          </div>
+          <div class="place-copy">
+            <span class="place-number">02 / PLAY</span>
+            <h3>大慶園</h3>
+            <p>ゲームやスポーツなど、遊びの選択肢がいっぱいのアミューズメントスポット。友だち同士でも、家族でも、それぞれのお気に入りを見つけて一日たっぷり楽しめます。</p>
+            <div class="place-meta"><span>ゲーム</span><span>スポーツ</span><span>みんなで遊ぶ</span></div>
+            <a class="inline-link" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E6%85%B6%E5%9C%92+%E5%B8%82%E5%B7%9D%E5%B8%82" target="_blank" rel="noreferrer">場所と最新情報を確認 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="nearby" aria-labelledby="nearby-title">
+      <div>
+        <span class="section-kicker">TAKE A LITTLE DETOUR</span>
+        <h2 id="nearby-title">もう少し、<br>寄り道しよう。</h2>
+        <p class="nearby-lead">大町の楽しみは、人気スポットの外にも。<br>季節を感じながら、のんびり歩いてみて。</p>
+      </div>
+      <ul class="nearby-list">
+        <li><div><strong>大町公園・自然観察園</strong><p>水辺と緑のなかを散策。自然観察園の開園状況は市の案内でご確認ください。</p></div><a href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E7%94%BA%E5%85%AC%E5%9C%92+%E5%B8%82%E5%B7%9D%E5%B8%82" target="_blank" rel="noreferrer">地図を見る ↗</a></li>
+        <li><div><strong>市川の梨</strong><p>市川の名産、梨。シーズンには直売所や梨狩りを楽しめる農園もあります。</p></div><a href="https://www.google.com/maps/search/?api=1&query=%E5%B8%82%E5%B7%9D%E5%B8%82%E5%A4%A7%E7%94%BA+%E6%A2%A8%E7%9B%B4%E5%A3%B2%E6%89%80" target="_blank" rel="noreferrer">近くを探す ↗</a></li>
+      </ul>
+    </section>
+
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="visit-inner">
+        <div>
+          <span class="section-kicker">PLAN YOUR VISIT</span>
+          <h2 id="visit-title">お出かけ前に、<br>アクセスをチェック。</h2>
+          <p class="visit-lead">目的地によって最寄り駅や行き方が異なります。最新の交通案内・営業情報は、各施設の公式情報をご確認ください。</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%B8%82%E5%B7%9D%E5%B8%82%E5%A4%A7%E7%94%BA" target="_blank" rel="noreferrer">市川市大町を地図で見る <span aria-hidden="true">↗</span></a>
+        </div>
+        <dl class="visit-details">
+          <div><dt>エリア</dt><dd>千葉県市川市大町</dd></div>
+          <div><dt>動植物園</dt><dd><a href="https://www.city.ichikawa.lg.jp/zoo/" target="_blank" rel="noreferrer">市川市動植物園 公式サイト ↗</a><br>開園日・時間・交通案内はこちら</dd></div>
+          <div><dt>大慶園</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E6%85%B6%E5%9C%92+%E5%B8%82%E5%B7%9D%E5%B8%82" target="_blank" rel="noreferrer">地図と最新情報を確認 ↗</a><br>施設情報・営業状況はお出かけ前にご確認ください</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">大</span><span class="brand-name">大町<small>ICHIKAWA, CHIBA</small></span></a>
+    <span>千葉県市川市大町を楽しむためのガイド</span>
+  </footer>
+</body>
+</html>
